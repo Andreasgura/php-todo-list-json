@@ -2,21 +2,26 @@
     {
         "id": 1,
         "text": "patate",
-        "done" : false        
+        "done": false
     },
     {
         "id": 2,
         "text": "cipolle",
-        "done" : false        
+        "done": false
     },
     {
         "id": 3,
         "text": "pasta",
-        "done" : false        
+        "done": false
     },
     {
         "id": 4,
         "text": "riso",
-        "done" : false        
+        "done": false
+    },
+    {
+        "id": 5,
+        "text": "prova",
+        "done": false
     }
 ]
