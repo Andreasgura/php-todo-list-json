@@ -28,7 +28,8 @@
                 <option value="3">Fatte</option>
               </select>
             <ul class="list-group mt-2 ">
-                <li :class="{ 'text-decoration-line-through' : item.done }" class="list-group-item d-flex  justify-content-between " v-for="(item, index) in toDo" :key="item.id">
+                <li :class="{ 'text-decoration-line-through' : item.done }" class="list-group-item d-flex  justify-content-between " 
+                v-for="(item, index) in toDo" :key="item.id">
                     <span @click="toggleDone(item.id)" >{{item.text}}</span>
                     <i @click="removeItem(item.id)" class="fa-solid fa-trash-can"></i>
                 </li>

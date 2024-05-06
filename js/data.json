@@ -7,21 +7,26 @@
     {
         "id": 2,
         "text": "cipolle",
-        "done": false
+        "done": true
     },
     {
         "id": 3,
         "text": "pasta",
-        "done": false
+        "done": true
     },
     {
         "id": 4,
         "text": "riso",
-        "done": false
+        "done": true
     },
     {
         "id": 5,
         "text": "prova",
+        "done": false
+    },
+    {
+        "id": 6,
+        "text": "fdh",
         "done": false
     }
 ]

@@ -9,10 +9,16 @@ createApp({
   },
   methods: {
     toggleDone(id) {
-      const item = this.toDo.find((el) => el.id === id);
-      if (item) {
-        item.done = !item.done;
+      const data = this.toDo.find((el) => el.id === id);
+      console.log(data);
+      if (data) {
+        data.done = !data.done;
       }
+    axios
+        .put(this.apiUrl, data)
+        .then((response) => {
+          this.toDo = response.data
+        })
     },
     removeItem(id) {
       const i = this.toDo.findIndex((el) => el.id === id)
