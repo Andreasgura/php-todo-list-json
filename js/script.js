@@ -1,10 +1,9 @@
-import { toDo } from "./data.js";
-
 const {createApp} = Vue;
 createApp({
     data() {
       return {
-        toDo,
+        toDo: [],
+        apiUrl: 'server.php',
         text : ''
       }
     },
@@ -36,8 +35,18 @@ createApp({
       this.toDo.push(newLi);
       this.text = ''       
       },
+      getData (){
+        axios
+        .get(this.apiUrl)
+        .then((response) => {
+          console.log(response.data);
+          this.toDo = response.data
+        })
+      }
     },
-    mounted () { 
-                     
+    created () {
+     this.getData()
+    },
+    mounted () {      
     }
   }).mount('#app');
